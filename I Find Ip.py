@@ -14,7 +14,7 @@ print(ascii_banner)
 if __name__=='__main__':
     hostname = raw_input ("Enter The Target :")
     addr = socket.gethostbyname(hostname)
-print("The Ip  {}  address is || {} ||  ".format(hostname,addr))
+print("THE IP  {}  ADDERSS IS || {} ||  ".format(hostname,addr))
  
 s= socket.socket (socket.AF_INET, socket.SOCK_STREAM)
 pr= (80,443,21,22,8080)
