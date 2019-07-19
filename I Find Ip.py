@@ -1,20 +1,40 @@
 import terminal_banner
 import pyfiglet
 import socket
+import time 
 def cls(): 
-    print('\n'* 100)
+    print('\n'* 20)
 cls()    
-banner_text = "Dr.Fr0sKa.\n\nSnap:Faris_th7 | Instagram:4o16."
+banner_text = "Snap:Faris_th7 | Instagram:4o16."
 my_banner = terminal_banner.Banner(banner_text)
 print(my_banner)
+banner = """
+\033[1;33m
+  _____   ______ _           _   _____       
+ |_   _| |  ____(_)         | | |_   _|      
+   | |   | |__   _ _ __   __| |   | |  _ __  
+   | |   |  __| | | '_ \ / _` |   | | | '_ \ 
+  _| |_  | |    | | | | | (_| |  _| |_| |_) |
+ |_____| |_|    |_|_| |_|\__,_| |_____| .__/ 
+                                      | |    
+                                      |_|    
+\033[0m        \t-={ \033[1;36mBy Dr.Fr0sKa\033[0m }=-
+"""
 
-ascii_banner = pyfiglet.figlet_format("I Find Ip")
-print(ascii_banner)
-
+print banner
 if __name__=='__main__':
-    hostname = raw_input ("Enter The Target :")
+    hostname = raw_input ("\033[1;33m[ # ]\033[1;32m Enter The Target :")
     addr = socket.gethostbyname(hostname)
-print("THE IP  {}  ADDERSS IS || {} ||  ".format(hostname,addr))
+from colorama import Fore, Back, Style
+print(Fore.GREEN)
+time.sleep(3)
+print("\033[1;31m[ ! ]\033[1;36m The Ip  {}  Address Is || {} || >>> \033[0m".format(hostname,addr))
+
+from colorama import Fore, Back, Style
+print(Fore.WHITE)
+
+time.sleep(3)
+
  
 s= socket.socket (socket.AF_INET, socket.SOCK_STREAM)
 pr= (80,443,21,22,8080)
@@ -26,9 +46,9 @@ def pscan(pr):
 		return False
 for x in pr:
 	if pscan(x):
-		print ("Port",x,"Is Open")
+		print ("\033[1;32mPort",x,"\033[1;32mIs Open")
 	else:
-		print("Port",x,"Is Closed")
+		print("\033[1;31mPort"),x,("\033[1;31mIs Closed")
 	
 	
 	
