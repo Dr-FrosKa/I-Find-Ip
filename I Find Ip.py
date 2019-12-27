@@ -1,11 +1,10 @@
 import terminal_banner
-import pyfiglet
 import socket
 import time 
 def cls(): 
     print('\n'* 20)
 cls()    
-banner_text = "Snap:Faris_th7 | Instagram:4o16."
+banner_text = "Snap:JHKT | Instagram:OX9X."
 my_banner = terminal_banner.Banner(banner_text)
 print(my_banner)
 banner = """
