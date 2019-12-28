@@ -1,13 +1,8 @@
-import terminal_banner
 import socket
 import time 
 def cls(): 
     print('\n'* 20)
-cls()    
-banner_text = "Snap:JHKT | Instagram:OX9X."
-my_banner = terminal_banner.Banner(banner_text)
-print(my_banner)
-banner = """
+print ("""
 \033[1;33m
   _____   ______ _           _   _____       
  |_   _| |  ____(_)         | | |_   _|      
@@ -18,9 +13,7 @@ banner = """
                                       | |    
                                       |_|    
 \033[0m        \t-={ \033[1;36mBy Dr.Fr0sKa\033[0m }=-
-"""
-
-print banner
+""")
 if __name__=='__main__':
     hostname = raw_input ("\033[1;33m[ # ]\033[1;32m Enter The Target :")
     addr = socket.gethostbyname(hostname)
